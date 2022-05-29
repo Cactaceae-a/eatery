@@ -52,7 +52,7 @@ export const signOut = () => async (dispatch) => {
   try {
     localStorage.removeItem("zomatoUser");
     clearUser();
-    window.location.href = "http://localhost:3000/home";
+    window.location.href = "https://gentle-melba-fa3082.netlify.app/home";
 
     return dispatch({ type: SIGN_OUT, payload: {} });
   } catch (error) {
