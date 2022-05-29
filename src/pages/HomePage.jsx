@@ -8,7 +8,7 @@ import { getRestaurant } from '../redux/reducers/restaurant/restaurant.action';
 //components
 import Home from '../components/Home';
 import Dining from '../components/Dining';
-import NightLife from '../components/NightLife';
+import About from '../components/About';
 
 
 function HomePage() {
@@ -25,7 +25,7 @@ function HomePage() {
     <div className='my-5'>
      {type==='home' && <Home/>}
      {type==='dining' && <Dining/>}
-     {type==='night' && <NightLife/>}
+     {type==='about' && <About/>}
     </div>
      
    </>

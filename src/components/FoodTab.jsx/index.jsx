@@ -21,7 +21,7 @@ const MobileTabs = () => {
           name: "Dining",
         },
         {
-          id: "night",
+          id: "about",
           icon: <BsFillInfoCircleFill />,
           name: "About",
         },
@@ -81,7 +81,7 @@ const LargeTabs = () => {
           name: "Dining",
         },
         {
-          id: `night`,
+          id: `about`,
           imageDefault:
             "https://zomato-master-new.s3.ap-south-1.amazonaws.com/aboutblack.png",
           imageActive:
