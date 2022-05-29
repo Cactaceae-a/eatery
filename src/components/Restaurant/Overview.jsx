@@ -144,7 +144,7 @@ function Overview() {
                 <div>
                     <Slider {...settings}>
                       {restaurantList.map((restaurant)=>{
-                           console.log(restaurant);
+                          //  console.log(restaurant);
                         return (<MenuSimilarRestaurantCard {...restaurant} key={restaurant._id} />)
                           })}
                     </Slider>
