@@ -26,7 +26,7 @@ function FoodItem(props) {
         <h5>{props.name}</h5>
         <div className="mt-4 flex items-center gap-2">
           <div className="flex flex-col items-end">
-            <small>${parseInt(props.price) * parseInt(props.quantity)}</small>
+            <small>{parseInt(props.price) * parseInt(props.quantity)} Rs</small>
             <div className="px-1  bg-RedShade-400 text-white rounded flex items-center gap-1">
               <button
                 onClick={decrement}

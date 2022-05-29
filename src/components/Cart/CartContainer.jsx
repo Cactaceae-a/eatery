@@ -23,8 +23,8 @@ function CartSM({ toggle }) {
             Item <IoMdArrowDropup />
           </small>
           <h4>
-            ${reduxState.reduce((acc, curVal) => acc + curVal.totalPrice, 0)}
-            $300 <sub>(plus tax)</sub>
+            {reduxState.reduce((acc, curVal) => acc + curVal.totalPrice, 0)}Rs
+            <sub>(plus tax)</sub>
           </h4>
         </div>
         <button
@@ -51,8 +51,8 @@ function CartLG({ toggle }) {
             Item <IoMdArrowDropup />
           </small>
           <h4>
-            ${reduxState.reduce((acc, curVal) => acc + curVal.totalPrice, 0)}{" "}
-         $300<sub>(plus tax)</sub>
+            {reduxState.reduce((acc, curVal) => acc + curVal.totalPrice, 0)}Rs{" "}
+        <sub>(plus tax)</sub>
           </h4>
         </div>
         <button
