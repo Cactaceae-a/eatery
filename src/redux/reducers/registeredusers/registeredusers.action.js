@@ -24,8 +24,8 @@ export const postImageToCheck = (file) => async (dispatch) => {
   else{
     Swal.fire({
       icon: 'error',
-      title: 'Kindly check your orders',
-      text: 'You can buy food from ony this restraunt through this gateway',
+      title: 'Kindly check your order',
+      text: 'Either you are not registered or ordering food from other eateries as well',
       footer: '<a href="">Thank you!</a>'
     })
   }});
@@ -34,8 +34,8 @@ export const postImageToCheck = (file) => async (dispatch) => {
   } catch (error) {
       Swal.fire({
         icon: 'error',
-        title: 'User not present',
-        text: 'Kindly pay through online banking',
+        title: 'Kindly check your orders',
+        text: 'Either you are not registered or ordering food from other eateries as well',
         footer: '<a href="">Thank you!</a>'
       })
   
