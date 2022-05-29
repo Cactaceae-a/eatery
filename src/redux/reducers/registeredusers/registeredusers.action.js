@@ -10,7 +10,7 @@ export const postImageToCheck = (file) => async (dispatch) => {
   try {
     await axios({
       method: "POST",
-      url: `http://localhost:5000/registeredusers`,
+      url: `https://eatery-backend.herokuapp.com/registeredusers`,
       data: {file}
     }).then(response => {
       if(response.data == 'success'){
@@ -47,7 +47,7 @@ export const postImageToUpload = (file) => async (dispatch) => {
   try {
     await axios({
       method: "POST",
-      url: `http://localhost:5000/registeredusers/upload`,
+      url: `https://eatery-backend.herokuapp.com/registeredusers/upload`,
       data: {file}
     }).then(response => {
       console.log(response);

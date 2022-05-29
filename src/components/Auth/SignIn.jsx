@@ -31,7 +31,7 @@ function Signin({ isOpen, setIsOpen }) {
   };
 
   const googleSignIn = () =>
-    (window.location.href = "http://localhost:5000/auth/google");
+    (window.location.href = "https://eatery-backend.herokuapp.com/auth/google");
 
   return (
     <>

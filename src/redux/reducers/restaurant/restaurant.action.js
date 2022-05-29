@@ -7,7 +7,7 @@ export const getRestaurant = ()=> async(dispatch)=>{
 try{
 const restaurantList= await axios({
 method: "GET",
-url: "http://localhost:5000/restaurant/?city=IIT-BHU"
+url: "https://eatery-backend.herokuapp.com/restaurant/?city=IIT-BHU"
 });
 return dispatch({type: GET_RESTAURANT, payLoad: restaurantList.data});
 }
@@ -21,7 +21,7 @@ export const getRestaurantBySearchString = (name)=> async(dispatch)=>{
 try{
 const restaurantList2 = await axios({
 method: "GET",
-url: `http://localhost:5000/restaurant/search/${name}`
+url: `https://eatery-backend.herokuapp.com/restaurant/search/${name}`
 }).then((res)=>window.location.href = `/restaurant/${res.data}/overview`)
 return dispatch({type: GET_RESTAURANTS_BY_SEARCHSTRING, payLoad: restaurantList2.data});
 }
@@ -34,7 +34,7 @@ export const getSpecificRestaurant = (_id) => async (dispatch) => {
     try {
       const restaurnat = await axios({
         method: "GET",
-        url: `http://localhost:5000/restaurant/${_id}`,
+        url: `https://eatery-backend.herokuapp.com/restaurant/${_id}`,
       });
   
       return dispatch({

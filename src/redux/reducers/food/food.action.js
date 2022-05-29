@@ -7,7 +7,7 @@ export const getFood = (foodId) => async (dispatch) => {
   try {
     const Food = await axios({
       method: "GET",
-      url: `http://localhost:5000/food/${foodId}`,
+      url: `https://eatery-backend.herokuapp.com/food/${foodId}`,
     });
     return dispatch({ type: GET_FOOD, payload: Food.data });
   } catch (error) {
@@ -19,7 +19,7 @@ export const getFoodList = (menuId) => async (dispatch) => {
   try {
     const Menu = await axios({
       method: "GET",
-      url: `http://localhost:5000/menu/list/${menuId}`,
+      url: `https://eatery-backend.herokuapp.com/menu/list/${menuId}`,
     });
     return dispatch({ type: GET_FOOD_LIST, payload: Menu.data });
   } catch (error) {
@@ -31,7 +31,7 @@ export const getFoodListOFSpecificRestraunt = (restaurantID)=> async(dispatch)=>
   try{
   const FoodList= await axios({
   method: "GET",
-  url: `http://localhost:5000/food/r/${restaurantID}`
+  url: `https://eatery-backend.herokuapp.com/food/r/${restaurantID}`
   });
   return dispatch({type: GET_FOOD_LIST_OF_SPECIFIC_RESTAURANT , payLoad: FoodList.data});
   }
